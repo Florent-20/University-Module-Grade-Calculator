@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grade calculator.css">
+</head>
+<body>
+<div class="container">
+   <section class="sec1">
+    <div class="title">STUDENT GRADE CALCULATOR</div>
+    <div class="subtitle"><p>Enter assignment score and weights to calculate your final grade.</p></div>
+   </section>
+   <section class="sec2">
+    <div class="cont2">
+       <div class="inputbox1">
+        <p>Assissment Name</p>
+        <input type="text" id="assname" placeholder="E.g:CAT1/CAT2...">
+       </div> 
+       <div class="inputtext">
+        <label>Score Obtained (%)</label>
+        <label>Weight/Value (%)</label>
+       </div>
+       <div class="inputbox2">
+        <input type="text" id="score" placeholder="0-100">
+        <input type="text" id="weight" placeholder="1-100">
+       </div> 
+       <div class="btn1">
+        <button class="btn">ADD ASSESSMENT</button>
+       </div>
+    </div>
+   </section>
+   <section class="sec3">
+    <table cellpadding="12" cellspacing="0" width="90%" border="1">
+            <thead>
+                <tr>
+                    <th>Assessment</th>
+                    <th>Score</th>
+                    <th>Weight</th>
+                    <th>Contribution</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </section>
+    <section class="sec4">
+        <div class="all-total">
+        <div class="total-weight">
+    Total Weight Entered:
+    <span>0%/100%</span>
+</div>
+
+<div class="final-grade">
+    Current Final Grade:
+    <span>0%</span>
+</div>
+        </div>
+    </section>
+
+    <section class="sec5">
+        <button class="clear-all">🖌️ Clear All Data</button>
+    </section>
+ </div>
+ <script src="grade.js"></script>
+</body>
+</html>
